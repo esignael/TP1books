@@ -4,9 +4,9 @@
 
 # To complete: 
 
-* Name :
-* Student Id:
-* Email :
+* Name : Cem Guvel
+* Student Id: 017013130E
+* Email : cem.guevel.001@student.uni.lu
 
 ### Setting
 In this practical session, you will code a method to compute the cost of shopping basket and test it using JUnit.
