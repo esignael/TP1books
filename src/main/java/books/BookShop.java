@@ -18,7 +18,23 @@ public class BookShop {
      * @return the cost in euro with the discount
      */
     public double cost(int[] books){
-        //TODO complete
-        return 0.0;
+       int number_of_books = 0;
+       int track = 31;
+       int discount = 0;
+       double price = 0.0;
+       for (int i: books) {
+          if (track & (1 << i)) {
+             number_of_books++;
+             track &= ~(1 << i)
+          }
+       }
+       if (number_of_books > 1) {
+          discount = (number_of_books - 1) * 7;
+       } else if (number_of_books > 3) {
+          discount = discount + 7;
+       }
+       price = number_of_books * discount / 100;
+       price = price + (books.length - number_of_books) * 8;
+       return price;
     }
 }
